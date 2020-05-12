@@ -9,19 +9,7 @@ const Profile = (props) => {
             <div style = {{color: 'red', padding: 5}}>FullName: {props.fullName}</div>
             <div style = {{color: 'green', padding: 5}}>Biography: {props.bio}</div>
             <div style = {{color: 'orange', padding: 5}}>Profession: {props.profession}</div>
-            <div style = {{padding: 5}}>
-                <img 
-                    src = {props.src} 
-                    alt = {props.alt}
-                    style = {{
-                        width: 300, 
-                        height: 300, 
-                        borderRadius: 5
-                     }}
-                >
-                    {props.children}
-                </img>    
-            </div>             
+            <div style = {{padding: 5}}>{props.children}</div>             
         </div>
     );
 }
