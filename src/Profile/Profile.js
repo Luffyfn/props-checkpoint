@@ -1,7 +1,5 @@
 import React from 'react';
 import NoImg from '../Images/no-img-available.png';
-import Img from '../Images/profile-img.jpg';
-
 const Profile = (props) => {
     const handleName = () => {
         alert (`The profile user is : ${props.fullName}`);
@@ -13,14 +11,16 @@ const Profile = (props) => {
             <div style = {{color: 'orange', padding: 5}}>Profession: {props.profession}</div>
             <div style = {{padding: 5}}>
                 <img 
-                    src = {Img} 
-                    alt = "Profile picture" 
+                    src = {props.src} 
+                    alt = {props.alt}
                     style = {{
                         width: 300, 
                         height: 300, 
                         borderRadius: 5
                      }}
-                />
+                >
+                    {props.children}
+                </img>    
             </div>             
         </div>
     );
