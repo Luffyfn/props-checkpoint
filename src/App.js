@@ -9,10 +9,11 @@ const App = () => {
     <Profile 
       fullName = "Fares Nasfi" 
       bio = "Determined and Generous" 
-      profession = "Engineer" 
-      src = {Img}
-      alt = "Profile picture"
-    />  
+      profession = "Engineer"      
+    >
+      <img src = {Img}
+      alt = "Profile picture" /> 
+    </Profile>    
   );
 }
 
